@@ -1,14 +1,12 @@
-<article class="feed {{visibility}} {{post_class}}">
-
-{{#primary_tag}}
-    <div class="feed-calendar">
-        <a class="post-tag post-tag-{{slug}}" href="{{url}}">
-            {{name}}
-        </a>
-    </div>
-{{/primary_tag}}                
+<article class="feed {{visibility}} {{post_class}}">            
 
     <h2 class="feed-title">{{title}}</h2>
+
+    {{#primary_tag}}
+        <div class="single-meta-item single-meta-tag">
+            {{name}}
+        </div>
+    {{/primary_tag}}    
 
     <div class="feed-right">
         {{> "icons/star"}}
