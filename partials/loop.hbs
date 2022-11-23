@@ -2,17 +2,15 @@
 
     <h2 class="feed-title">{{title}}</h2>
 
-    {{#primary_tag}}
-        <div class="single-meta-item single-meta-tag">
-            {{name}}
-        </div>
-    {{/primary_tag}}    
-
     <div class="feed-right">
         {{> "icons/star"}}
+        
+        {{#primary_tag}}
         <div class="feed-length">
-            {{reading_time}}
+            {{name}}
         </div>
+        {{/primary_tag}}
+    
     </div>
 
     {{> "icons/chevron-right"}}
